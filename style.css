@@ -231,7 +231,17 @@ dd a {
   color: var(--muted);
 }
 
+.compact-link-list {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--muted);
+}
+
 .semester-list li + li {
+  margin-top: 4px;
+}
+
+.compact-link-list li + li {
   margin-top: 4px;
 }
 
@@ -335,6 +345,10 @@ dd a {
 .material-card p {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.material-note {
+  margin-top: 8px;
 }
 
 .material-links {

@@ -176,3 +176,71 @@ Open questions:
 Recommended next step:
 
 - Choose whether course materials should be public on GitHub Pages or referenced from external/private storage before adding many files.
+
+## 2026-05-05 General Courses And Activity Materials
+
+Current goal:
+
+- Add general course and activity material entries, keep click-through navigation to the independent materials page, and replace algorithm materials with a new PDF.
+
+Current state:
+
+- The homepage general course section now lists `天体物理概观` and `毛泽东思想概论`.
+- The homepage activity section now lists `历届资料`, `星星`, and `燃·骁`.
+- Each new entry links to a matching anchor in `course-materials.html`.
+- `course-materials.html` includes placeholder cards for the new general course and activity entries.
+- Old algorithm PDFs `ALG26-L1.pdf` and `ALG26-L2.pdf` were removed from `assets/courses/algorithm-foundations/`.
+- New `ALG26.pdf` was copied from the PPT directory into `assets/courses/algorithm-foundations/` and linked from the algorithm course card.
+
+Files changed:
+
+- `index.html`
+- `course-materials.html`
+- `style.css`
+- `docs/ai/handoff.md`
+- `assets/courses/algorithm-foundations/ALG26.pdf`
+- Removed `assets/courses/algorithm-foundations/ALG26-L1.pdf`
+- Removed `assets/courses/algorithm-foundations/ALG26-L2.pdf`
+
+Verification performed:
+
+- Confirmed `D:\13768\3春\5107\PPT\ALG26.pdf` exists before copying.
+- Confirmed the project asset directory contains `ALG26.pdf` after replacement.
+
+Open questions:
+
+- GitHub Pages deployment has not been performed yet; no public URL exists until the repository is pushed and Pages is enabled.
+
+Recommended next step:
+
+- Decide whether to keep large PDFs in the Git repository or move them to external storage before deploying.
+
+## 2026-05-05 External Link
+
+Current goal:
+
+- Add an external USTC pan link for `历届资料` while keeping the homepage concise.
+
+Current state:
+
+- The homepage `历届资料` entry still links to the independent materials page section.
+- The `历届资料` card in `course-materials.html` now contains the USTC pan share link, extraction code, and expiration date.
+
+Files changed:
+
+- `course-materials.html`
+- `style.css`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Added the provided URL exactly as given.
+- Did not modify `blog/first-blog.html`.
+
+Open questions:
+
+- The pan link requires a password and may not be usable after its expiration date on 2027-06-14 23:59:59.
+
+Recommended next step:
+
+- Test the link in a normal browser before final deployment.
