@@ -3,76 +3,171 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>个人主页</title>
+    <title>刘君芳的个人主页</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="site-header">
       <nav class="nav">
-        <a class="brand" href="index.html">个人主页</a>
+        <a class="brand" href="index.html">刘君芳</a>
         <div class="nav-links">
-          <a href="#about">简介</a>
-          <a href="#interests">方向</a>
-          <a href="#records">记录</a>
+          <a href="#profile">个人简介</a>
+          <a href="#research">科研经历</a>
+          <a href="#resources">课程资料</a>
           <a href="#blog">博客</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero" id="about">
-        <div>
-          <p class="eyebrow">Algorithm Foundations 2026</p>
-          <h1>你好，我是刘君芳</h1>
-          <p class="lead">
-            这里将放置一段真实的个人介绍，包括你的专业背景、学习状态和你希望在这个主页中展示的内容。
-          </p>
+      <section class="hero" id="profile">
+        <div class="profile-heading">
+          <p class="eyebrow">个人简介</p>
+          <h1>个人学术主页</h1>
+        </div>
+        <dl class="profile-list">
+          <div>
+            <dt>身份</dt>
+            <dd>中国科学技术大学 2023 级本科生</dd>
+          </div>
+          <div>
+            <dt>院系</dt>
+            <dd>数学科学学院</dd>
+          </div>
+          <div>
+            <dt>专业</dt>
+            <dd>信息与计算科学</dd>
+          </div>
+          <div>
+            <dt>研究兴趣</dt>
+            <dd>科学计算（PDE 数值解）</dd>
+          </div>
+          <div>
+            <dt>联系方式</dt>
+            <dd><a href="mailto:ljf_frfr@mail.ustc.edu.cn">ljf_frfr@mail.ustc.edu.cn</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section" id="research">
+        <div class="section-title">
+          <p class="eyebrow">Research</p>
+          <h2>科研经历</h2>
+        </div>
+        <div class="academic-card">
+          <article class="research-item">
+            <h3>动理学输运方程低秩 Neural Galerkin 方法的研究与应用</h3>
+            <dl>
+              <div>
+                <dt>项目类型</dt>
+                <dd>大学生研究计划</dd>
+              </div>
+              <div>
+                <dt>指导教师</dt>
+                <dd>熊涛教授</dd>
+              </div>
+            </dl>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="interests">
-        <h2>学习方向与技术兴趣</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>算法与数据结构</h3>
-            <p>记录算法基础课程中的概念、题目理解和实践总结。</p>
-          </article>
-          <article class="card">
-            <h3>AI Agent 工作流</h3>
-            <p>探索如何使用 AI Agent 辅助规划、实现、验证和复盘项目。</p>
-          </article>
-          <article class="card">
-            <h3>个人学习记录</h3>
-            <p>整理课程作业、阅读笔记和阶段性学习反思。</p>
-          </article>
+      <section class="section" id="resources">
+        <div class="section-title">
+          <p class="eyebrow">Resources</p>
+          <h2>课程与资料整理</h2>
         </div>
-      </section>
+        <div class="resource-section">
+          <div class="resource-header">
+            <h3>专业课程</h3>
+            <a class="resource-link" href="course-materials.html">课程资料 / 学习笔记入口</a>
+          </div>
+          <div class="semester-list">
+            <article>
+              <h4>大一上</h4>
+              <ul>
+                <li><a class="course-link" href="course-materials.html#mathematical-analysis-a1">数学分析 A1</a></li>
+                <li><a class="course-link" href="course-materials.html#algebra-foundations">代数学基础</a></li>
+                <li><a class="course-link" href="course-materials.html#geometry-foundations">几何学基础</a></li>
+              </ul>
+            </article>
+            <article>
+              <h4>大一下</h4>
+              <ul>
+                <li><a class="course-link" href="course-materials.html#mathematical-analysis-a2">数学分析 A2</a></li>
+                <li><a class="course-link" href="course-materials.html#linear-algebra-a1">线性代数 A1</a></li>
+                <li><a class="course-link" href="course-materials.html#science-society-seminar">科学与社会研讨课</a></li>
+              </ul>
+            </article>
+            <article>
+              <h4>大二上</h4>
+              <ul>
+                <li><a class="course-link" href="course-materials.html#linear-algebra-a2">线性代数 A2</a></li>
+                <li><a class="course-link" href="course-materials.html#ode-introduction">微分方程引论</a></li>
+                <li><a class="course-link" href="course-materials.html#mathematical-analysis-a3">数学分析 A3</a></li>
+              </ul>
+            </article>
+            <article>
+              <h4>大二下</h4>
+              <ul>
+                <li><a class="course-link" href="course-materials.html#real-analysis">实分析</a></li>
+                <li><a class="course-link" href="course-materials.html#complex-analysis">复分析</a></li>
+                <li><a class="course-link" href="course-materials.html#probability-theory">概率论</a></li>
+                <li><a class="course-link" href="course-materials.html#abstract-algebra">近世代数</a></li>
+              </ul>
+            </article>
+            <article>
+              <h4>大三上</h4>
+              <ul>
+                <li><a class="course-link" href="course-materials.html#functional-analysis">泛函分析</a></li>
+                <li><a class="course-link" href="course-materials.html#operations-research">运筹学</a></li>
+                <li><a class="course-link" href="course-materials.html#differential-geometry">微分几何</a></li>
+                <li><a class="course-link" href="course-materials.html#mathematical-experiment">数学实验</a></li>
+                <li><a class="course-link" href="course-materials.html#numerical-linear-algebra">数值代数</a></li>
+                <li><a class="course-link" href="course-materials.html#qiangji-seminar-1">数学强基讨论班Ⅰ</a></li>
+              </ul>
+            </article>
+            <article>
+              <h4>大三下</h4>
+              <ul>
+                <li><a class="course-link" href="course-materials.html#numerical-analysis">数值分析</a></li>
+                <li><a class="course-link" href="course-materials.html#algorithm-foundations">算法基础</a></li>
+                <li><a class="course-link" href="course-materials.html#wavelet-analysis">小波分析</a></li>
+                <li><a class="course-link" href="course-materials.html#qiangji-seminar-2">数学强基讨论班Ⅱ</a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
 
-      <section class="section" id="records">
-        <h2>项目展示与学习记录</h2>
-        <div class="timeline">
-          <div>
-            <span>2026-05</span>
-            <p>使用 AI Agent 辅助搭建个人主页，并完成第一篇技术博客。</p>
-          </div>
-          <div>
-            <span>待补充</span>
-            <p>这里可以加入课程项目、开源项目、论文阅读或其他学习成果。</p>
-          </div>
+        <div class="resource-grid">
+          <article class="resource-section">
+            <div class="resource-header">
+              <h3>通识课程</h3>
+              <a class="resource-link" href="#" aria-label="通识课程资料入口">可挂载课程资料</a>
+            </div>
+            <p>预留通识课程资料、学习笔记或课程记录入口。</p>
+          </article>
+          <article class="resource-section">
+            <div class="resource-header">
+              <h3>其他活动</h3>
+              <a class="resource-link" href="#" aria-label="社团资料入口">可挂载社团资料</a>
+            </div>
+            <p>预留课外社团活动资料或相关记录入口。</p>
+          </article>
         </div>
       </section>
 
       <section class="section blog-section" id="blog">
         <div>
-          <h2>技术博客</h2>
-          <p>第一篇博客将围绕 AI Agent 辅助编程或算法学习中的个人理解展开。</p>
+          <p class="eyebrow">Blog</p>
+          <h2>博客列表</h2>
+          <p>本次作业的第一篇技术博客。</p>
         </div>
         <a class="button" href="blog/first-blog.html">阅读第一篇博客</a>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Built for Algorithm Foundations 2026.</p>
+      <p>Built for Algorithm Foundations 2026 · 刘君芳 · USTC</p>
     </footer>
   </body>
 </html>

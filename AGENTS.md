@@ -60,6 +60,7 @@ Follow this workflow for non-trivial tasks:
 5. Execute in small, reviewable steps.
 6. After editing, verify links, layout, and required assignment items.
 7. Summarize changed files, verification results, and next steps.
+8. For each meaningful content, layout, workflow, or report change, update `docs/ai/handoff.md` so later maintainers can understand what changed, why it changed, how it was checked, and what remains open.
 
 ## Report Rules
 
