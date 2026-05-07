@@ -277,3 +277,33 @@ Open questions:
 Recommended next step:
 
 - Commit and push the homepage update after local visual inspection.
+
+## 2026-05-07 Mao Course Material
+
+Current goal:
+
+- Add the provided Mao Zedong Thought course PDF to the course materials page with a user-facing link name.
+
+Current state:
+
+- Copied `D:\13768\2春\2121\永志班史.pdf` into the project as `assets/courses/mao-zedong-thought/xiao-lunwen.pdf`.
+- The `毛泽东思想概论` card in `course-materials.html` now links to the PDF with the display name `小论文`.
+
+Files changed:
+
+- `course-materials.html`
+- `docs/ai/handoff.md`
+- `assets/courses/mao-zedong-thought/xiao-lunwen.pdf`
+
+Verification performed:
+
+- Confirmed the source PDF exists and is small enough for normal GitHub repository storage.
+- Confirmed the copied PDF exists under the project assets directory.
+
+Open questions:
+
+- Future large video files should not be committed directly to this repository.
+
+Recommended next step:
+
+- Check the course materials page locally, then commit and push the updated material link.
