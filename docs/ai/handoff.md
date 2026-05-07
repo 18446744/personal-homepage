@@ -339,3 +339,38 @@ Open questions:
 Recommended next step:
 
 - Test both external links in a browser after pushing to GitHub Pages.
+
+## 2026-05-07 Profile And Resource Layout
+
+Current goal:
+
+- Move the homepage assignment description below the whole profile area and simplify resource links.
+
+Current state:
+
+- The assignment-description paragraph now appears below the profile image and personal information list, above the research section.
+- The description text and typography remain unchanged.
+- Removed the `可挂载课程资料` and `可挂载社团资料` links from the homepage.
+- Removed the `通识课程` and `其他活动` placeholder cards from `course-materials.html`.
+- Homepage `天体物理概观` and `毛泽东思想概论` now link directly to their materials.
+- Renamed `星星` to `2024SeeYou毕业晚会` on both the homepage and materials page.
+
+Files changed:
+
+- `index.html`
+- `style.css`
+- `course-materials.html`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Checked relevant homepage and materials page source before editing.
+- Checked source search results, Git diff, and repository status after editing.
+
+Open questions:
+
+- The external Release PDF and USTC pan links should be tested after deployment.
+
+Recommended next step:
+
+- Visually inspect the profile section locally, then commit and push the updates.
