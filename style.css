@@ -403,6 +403,23 @@ dd a {
   margin-top: 34px;
 }
 
+.image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  margin: 28px 0;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--muted);
+  text-align: center;
+}
+
+.image-placeholder span {
+  padding: 0 18px;
+}
+
 @media (max-width: 760px) {
   .hero,
   .section-title,

@@ -445,3 +445,68 @@ Open questions:
 Recommended next step:
 
 - Decide the footer wording, then commit the combined resource-label and manual-edit updates.
+
+## 2026-05-07 Blog Replacement
+
+Current goal:
+
+- Replace the first blog post with the user's complete article about AI Agent assisted homepage development.
+
+Current state:
+
+- `blog/first-blog.html` now uses the title `AI Agent 辅助搭建个人主页实践与思考`.
+- The blog body was replaced with the provided sections: preface, tools used, first AI Agent experience, prompt granularity, file upload strategy, real usage reflections, and conclusion.
+- All screenshot markers were converted into styled placeholder blocks for later image insertion.
+- Added shared `.image-placeholder` styling in `style.css`.
+
+Files changed:
+
+- `blog/first-blog.html`
+- `style.css`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Read the previous blog page and reused its page shell, stylesheet reference, and navigation links.
+- Checked source diff and searched for remaining raw screenshot marker text after editing.
+
+Open questions:
+
+- Actual screenshot files still need to be captured and inserted into the placeholder positions.
+
+Recommended next step:
+
+- Preview the blog page locally, then replace placeholders with final screenshots before writing the report.
+
+## 2026-05-07 Blog Section Revision
+
+Current goal:
+
+- Replace the blog content from section two through the conclusion with the user's revised version.
+
+Current state:
+
+- Blog section two now emphasizes moving from trial probing to collaboration with AI Agent.
+- Blog section three now frames prompt writing as a balance between vague and overly precise instructions.
+- Blog section four now describes a three-tier file storage strategy for small, medium, and large files.
+- Blog section five now summarizes practical reflections about AI Agent collaboration, asking/verifying, and retaining human responsibility.
+- The conclusion was replaced with the revised summary about completing the assignment and experiencing a full AI-assisted development process.
+- Existing screenshot placeholders were retained and relabeled where the revised content changed their wording.
+
+Files changed:
+
+- `blog/first-blog.html`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Located the existing section headings and placeholder blocks before editing.
+- Checked source diff and repository status after editing.
+
+Open questions:
+
+- Final screenshots are still pending.
+
+Recommended next step:
+
+- Preview the revised blog locally and commit once the wording is final.
