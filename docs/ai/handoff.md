@@ -307,3 +307,35 @@ Open questions:
 Recommended next step:
 
 - Check the course materials page locally, then commit and push the updated material link.
+
+## 2026-05-07 Resource Link Cleanup
+
+Current goal:
+
+- Remove the `历届资料` entry and update selected resource links to external downloads.
+
+Current state:
+
+- Removed `历届资料` from the homepage activity list.
+- Removed the `历届资料` material card from `course-materials.html`.
+- Updated `星星` to link to the provided USTC pan share URL.
+- Updated `天体物理概观` to link to the GitHub Release PDF asset download URL.
+
+Files changed:
+
+- `index.html`
+- `course-materials.html`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Checked source locations before editing.
+- Checked Git diff and repository status after editing.
+
+Open questions:
+
+- The GitHub Release URL assumes the file is attached as `astrophysics.pdf` under tag `course-materials-v1`.
+
+Recommended next step:
+
+- Test both external links in a browser after pushing to GitHub Pages.
