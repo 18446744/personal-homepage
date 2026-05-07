@@ -84,6 +84,24 @@ a {
   margin: 0 0 12px;
 }
 
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.hero-note {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
 h1,
 h2,
 h3,

@@ -244,3 +244,36 @@ Open questions:
 Recommended next step:
 
 - Test the link in a normal browser before final deployment.
+
+## 2026-05-07 Homepage Intro Update
+
+Current goal:
+
+- Replace the homepage opening title with a course-assignment description and add the provided image to the opening profile area.
+
+Current state:
+
+- The homepage hero no longer uses `个人学术主页` as a large heading.
+- The opening area now shows `assets/images/homepage-photo.jpg`, copied from the provided `FAKE.jpg`.
+- The opening description explains that the site is the first Algorithm Foundations assignment result and mentions the profile, research, course materials, activity materials, and blog sections.
+- The opening description uses normal body-sized text, matching the profile list scale, without bold styling.
+
+Files changed:
+
+- `index.html`
+- `style.css`
+- `docs/ai/handoff.md`
+- `assets/images/homepage-photo.jpg`
+
+Verification performed:
+
+- Confirmed the provided image was copied into the project asset directory.
+- Checked Git diff and repository status after editing.
+
+Open questions:
+
+- The homepage image should be visually checked in a browser before the next deployment.
+
+Recommended next step:
+
+- Commit and push the homepage update after local visual inspection.
