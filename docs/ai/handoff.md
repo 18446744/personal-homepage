@@ -544,3 +544,38 @@ Open questions:
 Recommended next step:
 
 - Preview the polished blog page and commit if the final wording is acceptable.
+
+## 2026-05-07 Blog Screenshot Insertion
+
+Current goal:
+
+- Replace the first two blog screenshot placeholders with the provided image files.
+
+Current state:
+
+- Replaced the `个人主页首页截图` placeholder with `blog/homepage-screenshot.png`.
+- Replaced the `AGENTS.md 文档截图` placeholder with `blog/agents-md-screenshot.png`.
+- Added reusable `.article-figure` styles for inserted blog images and captions.
+- The remaining two blog image positions are still placeholders.
+
+Files changed:
+
+- `blog/first-blog.html`
+- `style.css`
+- `docs/ai/handoff.md`
+- `blog/homepage-screenshot.png`
+- `blog/agents-md-screenshot.png`
+
+Verification performed:
+
+- Confirmed both screenshot files exist and viewed them locally.
+- Checked the target placeholder locations before editing.
+- Checked source search results and repository status after editing.
+
+Open questions:
+
+- The remaining `主页分区设计稿 / 对比截图` and `文件存储结构 / 云盘链接示意图` screenshots are still pending.
+
+Recommended next step:
+
+- Preview the blog page locally, then commit the screenshot insertion if the image sizing looks acceptable.

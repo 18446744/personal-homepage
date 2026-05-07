@@ -420,6 +420,25 @@ dd a {
   padding: 0 18px;
 }
 
+.article-figure {
+  margin: 28px 0;
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.article-figure figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
 @media (max-width: 760px) {
   .hero,
   .section-title,
