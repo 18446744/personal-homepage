@@ -374,3 +374,74 @@ Open questions:
 Recommended next step:
 
 - Visually inspect the profile section locally, then commit and push the updates.
+
+## 2026-05-07 Direct Resource Labels
+
+Current goal:
+
+- Make selected homepage resource labels more explicit and remove their duplicate cards from the materials page.
+
+Current state:
+
+- Committed the previous profile/resource layout changes locally as `ea02362` without pushing.
+- Homepage `天体物理概观` now displays as `天体物理概观（PPT）`.
+- Homepage `毛泽东思想概论` now displays as `毛泽东思想概论（小论文）`.
+- Homepage `2024SeeYou毕业晚会` now displays as `2024SeeYou毕业晚会（《星星》）`.
+- Homepage `燃·骁` now displays as `燃·骁（2026溯风、书院嘉年华、郭奖开幕式）` and links to the provided USTC pan URL.
+- Removed the `天体物理概观`, `毛泽东思想概论`, `2024SeeYou毕业晚会`, and `燃·骁` cards from `course-materials.html`.
+
+Files changed:
+
+- `index.html`
+- `course-materials.html`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Checked that the previous commit was created and not pushed.
+- Checked homepage and materials page source locations before editing.
+- Checked search results, Git diff, and repository status after editing.
+
+Open questions:
+
+- External USTC pan links should be tested manually in a browser after deployment.
+
+Recommended next step:
+
+- Commit this direct-resource-label update when the homepage wording is confirmed.
+
+## 2026-05-07 User Manual Edits Review
+
+Current goal:
+
+- Review and record the user's manual edits to `index.html` and `course-materials.html`.
+
+Current state:
+
+- Homepage profile label changed from `研究兴趣` to `兴趣方向`.
+- Homepage interest text changed from `科学计算（PDE 数值解）` to `PDE 数值解`.
+- Homepage resource labels now include `天体物理概观（PPT）` and `毛泽东思想概论（小论文）`.
+- Activity links now include `星星（2024蛙鸣之夏、SeeYou毕业晚会）`, `Romantic（2024美丽邂逅、2025舞团专场）`, and `燃·骁（2026溯风、书院嘉年华、郭奖开幕式）`.
+- `course-materials.html` introduction text was narrowed to course materials and no longer mentions activity material placeholders.
+- `course-materials.html` no longer contains the direct-link cards for `天体物理概观`, `毛泽东思想概论`, `2024SeeYou毕业晚会`, and `燃·骁`.
+- Footer English text changed to `Foundations of Algorithm 2026`.
+
+Files changed:
+
+- `index.html`
+- `course-materials.html`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Checked `git status --short --branch`.
+- Reviewed `git diff -- index.html course-materials.html`.
+- Searched for removed placeholder anchors and old labels such as `可挂载`, `历届资料`, and the removed material-page anchor links.
+
+Open questions:
+
+- Confirm whether the footer should remain `Foundations of Algorithm 2026` or use the more natural course-style wording `Algorithm Foundations 2026`.
+
+Recommended next step:
+
+- Decide the footer wording, then commit the combined resource-label and manual-edit updates.
