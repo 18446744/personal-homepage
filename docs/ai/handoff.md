@@ -510,3 +510,37 @@ Open questions:
 Recommended next step:
 
 - Preview the revised blog locally and commit once the wording is final.
+
+## 2026-05-07 Blog Polishing
+
+Current goal:
+
+- Polish the first blog post using the actual project history and handoff notes without repeating existing points.
+
+Current state:
+
+- Committed the previous full blog replacement as `46042bc` before further edits.
+- Fixed spacing in the preface around `Codex` and `GPT Plus`.
+- Added a new section about project records, explaining the roles of `AGENTS.md` and `docs/ai/handoff.md`.
+- Added a new section about GitHub Pages deployment, including the empty remote branch issue, push/RPC failure, and link verification.
+- Renumbered later blog sections so the article now has seven numbered sections before the conclusion.
+- Updated the conclusion to include project records, file storage, and deployment as part of the complete AI-assisted development workflow.
+
+Files changed:
+
+- `blog/first-blog.html`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Read the latest blog with UTF-8 output.
+- Read handoff notes and recent commit history.
+- Checked source diff and repository status after editing.
+
+Open questions:
+
+- The blog still uses screenshot placeholders; final screenshots need to be inserted later.
+
+Recommended next step:
+
+- Preview the polished blog page and commit if the final wording is acceptable.
