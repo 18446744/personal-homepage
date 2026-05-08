@@ -579,3 +579,44 @@ Open questions:
 Recommended next step:
 
 - Preview the blog page locally, then commit the screenshot insertion if the image sizing looks acceptable.
+
+## 2026-05-08 User Blog Rewrite And Snapshot Cleanup
+
+Current goal:
+
+- Remove the temporary early homepage page and record the user's manual blog rewrite before committing it.
+
+Current state:
+
+- Removed the temporary `early-homepage.html` page before it was committed.
+- The blog preface was rewritten in a more personal voice.
+- Blog section two was rewritten as `AI Agent：一款更适合零基础宝宝的vibe coding教程`.
+- Blog section three now combines project handoff notes, context continuity, and a real `handoff-screenshot.png` image.
+- Blog section four was rewritten around prompt ambiguity and over-specific instructions, with `prompt-memory.png` and `modify-screenshot.png` inserted.
+- Blog section five now focuses on file storage strategy and uses `file-storage-structure.png`.
+- Blog sections six and seven separate official and unofficial reflections.
+- New blog images added by the user are pending commit: `file-storage-structure.png`, `handoff-screenshot.png`, `homepage-v0.png`, `modify-screenshot.png`, and `prompt-memory.png`.
+
+Files changed:
+
+- `blog/first-blog.html`
+- `docs/ai/handoff.md`
+- `blog/file-storage-structure.png`
+- `blog/handoff-screenshot.png`
+- `blog/homepage-v0.png`
+- `blog/modify-screenshot.png`
+- `blog/prompt-memory.png`
+
+Verification performed:
+
+- Reviewed `git diff -- blog/first-blog.html docs/ai/handoff.md`.
+- Listed files under `blog/` to confirm the new screenshots exist.
+- Removed the uncommitted `early-homepage.html` as requested.
+
+Open questions:
+
+- `homepage-v0.png` exists but is not yet referenced in the blog.
+
+Recommended next step:
+
+- Commit the user's blog rewrite, then add Git version-management content to the blog as a separate follow-up change.
