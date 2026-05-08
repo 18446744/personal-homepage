@@ -620,3 +620,34 @@ Open questions:
 Recommended next step:
 
 - Commit the user's blog rewrite, then add Git version-management content to the blog as a separate follow-up change.
+
+## 2026-05-08 Git Version Management Blog Addendum
+
+Current goal:
+
+- Record and commit the user's follow-up blog revision about Git version management.
+
+Current state:
+
+- The user added `版本管理：Git（记录修改、回退历史、配合 GitHub Pages 部署）` to the tool list in section one.
+- The user added a section-three paragraph explaining that Git was initially understood only as a way to save versions, but became meaningful while writing the blog and trying to find earlier versions.
+- The `G老师原话` paragraph now also explains Git as a project timeline using `commit`, `git log`, `git show`, and `git diff`.
+- The user's blog voice and wording were preserved.
+
+Files changed:
+
+- `blog/first-blog.html`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Reviewed `git diff -- blog/first-blog.html docs/ai/handoff.md`.
+- Confirmed the Git content appears in section one and section three.
+
+Open questions:
+
+- None for this commit.
+
+Recommended next step:
+
+- Commit the user's Git version-management blog revision, then update the assignment report.
