@@ -13,9 +13,22 @@
   urlcolor=blue
 }
 \setlist[itemize]{leftmargin=2em}
+\setlist[enumerate]{leftmargin=2em}
+
+\newcommand{\screenshotplaceholder}[1]{
+  \begin{center}
+    \fbox{
+      \begin{minipage}[c][6cm][c]{0.9\textwidth}
+        \centering
+        #1\\[0.5em]
+        \textcolor{gray}{此处后续补充截图}
+      \end{minipage}
+    }
+  \end{center}
+}
 
 \title{算法基础第一次大作业报告}
-\author{你的姓名}
+\author{刘君芳}
 \date{2026年5月}
 
 \begin{document}
@@ -26,116 +39,185 @@
 
 \subsection{主页访问链接}
 
-主页访问链接：\url{https://example.com}
+本次作业个人主页已部署在 GitHub Pages，访问链接为：
+\begin{center}
+  \url{https://18446744.github.io/personal-homepage/}
+\end{center}
+
+主页中的博客入口能够跳转到本次作业完成的第一篇技术博客，课程资料与部分活动资料也提供了相应入口。
 
 \subsection{主页主要内容}
 
+个人主页采用静态网页形式实现，主要包括以下板块：
+
 \begin{itemize}
-  \item 个人基本介绍：这里填写你的真实姓名、专业背景、年级或学习状态。
-  \item 学习方向或技术兴趣：这里填写你目前关注的方向，例如算法、数据结构、AI Agent、三维视觉、计算机图形学等。
-  \item 项目展示或学习记录：这里填写课程作业、项目、阅读记录或阶段性学习总结。
-  \item 博客入口：主页中提供了第一篇技术博客的入口，能够直接跳转到博客页面。
+  \item \textbf{个人简介：}展示身份、院系、专业、兴趣方向和联系方式，并在首页说明该站点是算法基础第一次大作业的实践成果。
+  \item \textbf{科研经历：}展示大学生研究计划项目“动理学输运方程低秩 Neural Galerkin 方法的研究与应用”，并列出项目类型和指导教师。
+  \item \textbf{课程与资料整理：}按学期整理专业课程，并提供课程资料页面入口；同时在首页列出通识课程资料与课余活动资料链接。
+  \item \textbf{博客列表：}提供第一篇技术博客入口，能够从主页直接访问博客页面。
 \end{itemize}
 
 \subsection{页面结构与功能说明}
 
-个人主页采用静态网页实现，主要包括顶部导航、个人简介、学习方向、项目或学习记录、博客入口等模块。页面链接可以正常跳转，并考虑了基本的响应式布局，便于在常见浏览器和不同屏幕尺寸下阅读。
+主页使用 \texttt{index.html} 作为入口文件，配合 \texttt{style.css} 统一控制页面布局和视觉样式。页面顶部设置导航栏，能够跳转到个人简介、科研经历、课程资料和博客等页面区域。课程资料部分通过 \texttt{course-materials.html} 展示课程资料列表，其中“算法基础”资料以本地 PDF 文件形式提供；部分较大的资料使用 GitHub Release 或科大云盘链接，以避免仓库体积过大。
+
+页面整体为静态 HTML 与 CSS 实现，未引入复杂前端框架。布局上采用分区式结构，信息层级较清晰，并设置了响应式样式以适应常见屏幕尺寸。
 
 \section{博客内容介绍}
 
 \subsection{博客主题}
 
-博客主题：我如何理解 AI Agent 辅助编程
+第一篇技术博客题为《AI Agent 辅助搭建个人主页实践与思考》，主题属于 AI 工具使用、学习方法和技术实践总结。博客围绕本次个人主页搭建过程展开，重点记录使用 AI Agent 的真实体验、项目记录方式、Git 版本管理、提示词尺度、大文件存储方案以及个人反思。
 
 \subsection{博客访问方式}
 
-博客访问链接：\url{https://example.com/blog/first-blog.html}
+博客页面访问链接为：
+\begin{center}
+  \url{https://18446744.github.io/personal-homepage/blog/first-blog.html}
+\end{center}
+
+同时，主页底部“博客列表”区域提供了“阅读第一篇博客”按钮，可从主页直接跳转到博客页面；博客页面顶部也提供返回主页和博客列表的链接。
 
 \subsection{主要内容概述}
 
-博客主要讨论 AI Agent 辅助编程与传统网页端问答的区别，并结合本次个人主页搭建过程，说明为什么需要项目规范文件、版本管理、验证清单和交接记录。
+博客主要包括以下内容：
+
+\begin{enumerate}
+  \item 说明本次作业使用的工具，包括 Codex、HTML/CSS、GitHub Pages、Git、GitHub Release 和科大云盘等。
+  \item 记录初次使用 AI Agent 时从“试探”到逐步协作的过程。
+  \item 说明 \texttt{AGENTS.md} 和 \texttt{docs/ai/handoff.md} 对项目上下文延续的作用，并结合 Git 版本管理讨论如何保存和回溯网页修改历史。
+  \item 分析提示词过于模糊或过于细碎时出现的问题，以及自己如何重新规划主页模块和手动修改细节。
+  \item 总结不同大小资料文件的存储方案：小文件放入仓库，中等文件使用 GitHub Release，大视频和活动资料使用科大云盘。
+  \item 从较正式和较个人化两个角度总结 AI Agent 辅助开发的收获。
+\end{enumerate}
 
 \subsection{个人理解与思考}
 
-这里填写你自己的理解。建议结合本次作业中的具体经历，例如：AI 帮助你完成了哪些页面结构或样式设计，你自己如何检查、修改和取舍 AI 生成的内容。
+博客内容强调 AI Agent 可以降低上手门槛、提高网页搭建和文档整理效率，但无法替代使用者的判断。主页中的个人信息、科研经历、课程资料和博客观点都需要本人确认；AI 生成的页面结构、文字和链接也需要人工检查。通过本次作业，我认识到 AI Agent 更适合作为协作工具，而不是完全替代思考和动手的工具。
 
 \section{实现过程}
 
-\subsection{使用的主要工具或技术}
+\subsection{使用的主要工具与技术}
 
 \begin{itemize}
-  \item AI Agent：Codex。
-  \item 技术栈：HTML、CSS，必要时使用少量 JavaScript。
-  \item 版本管理：Git。
-  \item 部署方式：GitHub Pages。
+  \item \textbf{AI Agent：}主要使用 Codex，接入 GPT Plus 辅助阅读作业要求、生成项目文件、修改网页和整理报告。
+  \item \textbf{网页技术：}使用 HTML 和 CSS 搭建静态个人主页、课程资料页和博客页。
+  \item \textbf{版本管理：}使用 Git 管理修改历史，通过 commit 记录每一阶段工作。
+  \item \textbf{部署方式：}使用 GitHub Pages 从仓库 \texttt{master} 分支根目录发布静态页面。
+  \item \textbf{文件存储：}小文件直接放入仓库，中等文件使用 GitHub Release，较大视频和活动资料使用科大云盘外链。
 \end{itemize}
 
 \subsection{网页搭建过程}
 
-首先阅读课程大作业要求，确定需要完成个人主页、技术博客和作业报告。随后建立 Git 仓库，编写 \texttt{AGENTS.md} 作为 AI Agent 的项目规范文件，明确项目目标、文件结构、内容约束、验证清单和交接格式。之后逐步实现首页、博客页面和样式文件。
+首先，根据课程大作业要求建立个人主页项目，并用 \texttt{AGENTS.md} 固化项目规则，包括项目目标、文件结构、内容真实性要求、报告要求和验证清单。随后创建首页、博客页、课程资料页、样式文件和报告模板。
+
+首页最初是较简单的占位版本，后来根据真实信息逐步调整为当前结构：个人简介、科研经历、课程与资料整理、博客列表。课程资料部分经历了多次迭代：最初在首页直接挂载资料，后来为避免首页过长，改为独立的 \texttt{course-materials.html}；再后来根据资料大小，将部分文件改为 GitHub Release 或科大云盘链接。
+
+博客页面最初是占位草稿，后续替换为完整博客《AI Agent 辅助搭建个人主页实践与思考》，并逐步插入主页截图、\texttt{AGENTS.md} 截图、项目交接截图、提示词截图和文件存储结构图等材料。
 
 \subsection{部署过程}
 
-这里填写部署到 GitHub Pages 的过程。正式部署后，需要补充 GitHub 仓库地址、Pages 设置方式和最终访问链接。
+项目通过 GitHub Pages 部署。基本过程如下：
+
+\begin{enumerate}
+  \item 在 GitHub 上创建 \texttt{personal-homepage} 仓库。
+  \item 将本地 Git 仓库与远程仓库关联，并执行 \texttt{git push -u origin master}。
+  \item 在 GitHub 仓库的 \texttt{Settings -> Pages} 中选择从 \texttt{master} 分支的根目录发布。
+  \item 等待 GitHub Pages 构建完成后，通过 \url{https://18446744.github.io/personal-homepage/} 访问主页。
+\end{enumerate}
+
+部署过程中曾遇到 GitHub Pages 分支选项显示 \texttt{None} 的情况，原因是远程仓库尚未成功收到本地提交；也遇到过 \texttt{RPC failed} 和网络中断问题。后续通过重新确认远程分支和重新推送解决，并在部署完成后检查主页、博客页、课程资料页和外部资源链接。
 
 \subsection{遇到的问题及解决方法}
 
-这里填写实现过程中遇到的问题。例如：路径跳转错误、移动端布局不合适、Git 初始化或部署配置问题，以及对应的解决方法。
+\begin{itemize}
+  \item \textbf{提示词不够明确：}早期让 AI 自动整合个人信息时，出现信息重复、详略不当甚至过度扩写的问题。解决方式是重新按“模块--内容”整理需求，再要求 AI 按模块修改。
+  \item \textbf{上下文延续问题：}项目多次跨会话修改，容易忘记已做决策。解决方式是维护 \texttt{AGENTS.md} 和 \texttt{docs/ai/handoff.md}，每次重要修改后记录当前状态、变更文件和后续任务。
+  \item \textbf{资料文件体积差异大：}课程资料、小论文、PPT 和视频大小差异明显。解决方式是分级存储：小文件放仓库，中等文件放 GitHub Release，大文件使用科大云盘链接。
+  \item \textbf{部署和推送问题：}推送远程仓库时曾出现 RPC 错误，GitHub Pages 初次配置时也因远程分支为空无法选择分支。解决方式是确认本地 commit、远程分支和实际仓库页面内容，再重新推送。
+\end{itemize}
 
 \section{AI Agent 使用说明}
 
 \subsection{使用了哪些 AI 工具}
 
-本次作业主要使用 Codex 作为 AI Agent，辅助阅读作业要求、整理项目结构、编写初始网页和报告模板。
+本次作业主要使用 Codex 作为命令行 AI Agent，并结合 GPT Plus 能力完成网页搭建、文件整理、Git 操作指导和报告撰写。没有采用单纯网页端问答加复制代码的方式，而是尽量围绕项目文件和 Git 历史进行完整工作流协作。
 
 \subsection{AI 辅助完成了哪些内容}
 
 \begin{itemize}
-  \item 提取并总结课程 PDF 中的大作业要求。
-  \item 结合助教讲义整理 AI Agent 工作流。
-  \item 生成并修改 \texttt{AGENTS.md} 项目规范文件。
-  \item 搭建静态个人主页和第一篇博客页面的初始版本。
-  \item 建立报告模板和 AI 工作记录文档。
+  \item 阅读并整理作业要求，明确需要完成个人主页、第一篇技术博客、报告和可访问链接。
+  \item 生成并维护 \texttt{AGENTS.md}，明确项目规范、技术栈、内容规则和验证清单。
+  \item 搭建静态网页结构，包括首页、博客页、课程资料页和统一样式。
+  \item 协助整理课程资料和活动资料链接，给出 GitHub Pages、GitHub Release 和云盘分流方案。
+  \item 指导 GitHub Pages 部署步骤，并分析推送失败、分支为空等问题。
+  \item 协助将博客中的截图占位符替换为真实图片，并为图片添加统一样式。
+  \item 协助完善本报告结构，使其覆盖作业要求中的主要要点。
 \end{itemize}
 
-\subsection{自己对 AI 生成内容做了哪些修改}
+\subsection{本人对 AI 生成内容做了哪些修改}
 
-这里填写你自己完成的修改，例如：替换个人真实信息、调整页面内容、选择博客主题、补充个人思考、检查链接和截图。
+本人对 AI 生成内容进行了多轮人工修改和取舍：
+
+\begin{itemize}
+  \item 将主页内容替换为真实个人信息，包括院系、专业、兴趣方向、科研经历和联系方式。
+  \item 调整主页模块，删除不需要的占位内容，增加课程资料、通识课程资料和课余活动资料链接。
+  \item 手动修改部分 HTML 内容，如资源标签、页脚文字和博客段落，使其更符合个人表达。
+  \item 对博客内容进行大幅重写，保留个人真实体验和反思，而不是直接采用 AI 生成的正式文风。
+  \item 检查并整理文件存储方案，决定哪些文件放入仓库、哪些文件放入 Release 或云盘。
+  \item 使用 Git 管理版本，在重要阶段提交修改，并通过历史记录找回早期页面版本用于对比。
+\end{itemize}
 
 \subsection{对 AI 辅助编程的思考}
 
-这里填写你的反思。建议强调：AI 可以提高搭建和整理效率，但最终内容真实性、技术判断、结果检查和提交质量仍然需要自己负责。
+本次实践说明 AI Agent 在项目初期搭建、文件结构整理、代码修改和问题排查方面具有较高效率，尤其适合帮助初学者快速理解一个完整网页项目的工作流。但 AI 的输出并不总是直接可用：当需求描述模糊时，AI 可能生成不符合预期的页面结构；当指令过于细碎时，效率又可能低于直接手动修改。因此，使用 AI Agent 的关键在于明确目标、给出边界、及时验收，并保留人工判断。
+
+此外，AI Agent 与 Git、项目规范文档和 handoff 记录配合使用时效果更好。Git 负责保存版本，\texttt{AGENTS.md} 负责提供稳定规则，\texttt{handoff.md} 负责记录阶段性决策，三者共同降低了跨会话协作的混乱程度。
 
 \section{结果展示}
 
 \subsection{个人主页截图}
 
-正式提交前，将主页截图放到 \texttt{report/images/} 目录，并在这里引用。
+\screenshotplaceholder{个人主页首页截图}
 
-% 示例：
-% \begin{figure}[htbp]
-%   \centering
-%   \includegraphics[width=0.9\textwidth]{images/homepage.png}
-%   \caption{个人主页截图}
-% \end{figure}
+建议后续将主页截图保存为 \texttt{report/images/homepage.png}，并将本占位框替换为：
+\begin{verbatim}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{images/homepage.png}
+  \caption{个人主页首页截图}
+\end{figure}
+\end{verbatim}
 
 \subsection{博客页面截图}
 
-正式提交前，将博客页面截图放到 \texttt{report/images/} 目录，并在这里引用。
+\screenshotplaceholder{博客页面截图}
 
-% 示例：
-% \begin{figure}[htbp]
-%   \centering
-%   \includegraphics[width=0.9\textwidth]{images/blog.png}
-%   \caption{博客页面截图}
-% \end{figure}
+建议后续将博客截图保存为 \texttt{report/images/blog.png}，并按同样方式插入。
+
+\subsection{课程资料与链接截图}
+
+\screenshotplaceholder{课程资料页或主页资料链接截图}
+
+此处可展示课程资料页、GitHub Release 文件链接或科大云盘资料链接，说明主页资源入口能够正常访问。
+
+\subsection{AI Agent 使用过程截图}
+
+\screenshotplaceholder{AI Agent 使用过程、AGENTS.md 或 handoff 记录截图}
+
+此处可展示 \texttt{AGENTS.md}、\texttt{docs/ai/handoff.md} 或 Codex 协作过程截图，用于说明 AI Agent 辅助开发过程。
 
 \section{提交信息}
 
 \begin{itemize}
-  \item 个人主页网址：\url{https://example.com}
-  \item 博客入口：\url{https://example.com/blog/first-blog.html}
+  \item 个人主页网址：\url{https://18446744.github.io/personal-homepage/}
+  \item 博客入口：\url{https://18446744.github.io/personal-homepage/blog/first-blog.html}
+  \item GitHub 仓库：\url{https://github.com/18446744/personal-homepage}
   \item 报告导出日期：2026年5月
 \end{itemize}
+
+\section{总结}
+
+本次作业完成了一个可公开访问的个人主页，并在主页中提供了第一篇技术博客入口。主页包含个人简介、科研经历、课程与资料整理、博客列表等内容；博客围绕 AI Agent 辅助搭建个人主页的全过程展开，体现了个人理解和实际反思。实现过程中使用 Codex 辅助搭建网页、维护项目规范、记录交接信息、分析部署问题，并使用 Git 和 GitHub Pages 完成版本管理与线上发布。后续提交前仍需补充最终截图，并再次检查所有链接是否可访问。
 
 \end{document}
