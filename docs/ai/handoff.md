@@ -713,3 +713,40 @@ Open questions:
 Recommended next step:
 
 - Commit the wording tweak.
+
+## 2026-05-09 Report PDF And Final Blog Tweak
+
+Current goal:
+
+- Record and commit the user's latest blog wording change and completed report artifacts.
+
+Current state:
+
+- The blog section two wording was tightened: the paragraph about open-source skills was replaced with a shorter statement that asking AI directly was more efficient for initial onboarding.
+- Removed the unused `blog/homepage-v0.png` image.
+- Added the compiled assignment report PDF at `report/report.pdf`.
+- Added report images under `report/images/`: `personal-homepage结构示意图.png` and `博客页面截图.png`.
+- `report/report.tex` is unchanged in this working tree; the compiled PDF was added as the final report artifact.
+
+Files changed:
+
+- `blog/first-blog.html`
+- `blog/homepage-v0.png` removed
+- `report/report.pdf`
+- `report/images/personal-homepage结构示意图.png`
+- `report/images/博客页面截图.png`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Checked `git status --short --branch`.
+- Reviewed the blog diff.
+- Listed `report/` and `report/images/` to confirm the PDF and report images exist.
+
+Open questions:
+
+- None.
+
+Recommended next step:
+
+- Commit the final report artifacts and blog wording tweak.
