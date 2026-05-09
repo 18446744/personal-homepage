@@ -684,3 +684,32 @@ Open questions:
 Recommended next step:
 
 - Compile `report/report.tex` with XeLaTeX in a TeX environment, then replace screenshot placeholders with final images.
+
+## 2026-05-09 Blog Wording Tweak
+
+Current goal:
+
+- Record and commit a small user edit to the first blog post.
+
+Current state:
+
+- The user revised one sentence in section two, changing the transition after "大框架看起来没什么问题" to "所以先用着吧。然后一边问着G老师怎么写提示词...".
+- No other source files were changed before this record.
+
+Files changed:
+
+- `blog/first-blog.html`
+- `docs/ai/handoff.md`
+
+Verification performed:
+
+- Checked `git status --short --branch`.
+- Reviewed `git diff -- blog/first-blog.html docs/ai/handoff.md`.
+
+Open questions:
+
+- None.
+
+Recommended next step:
+
+- Commit the wording tweak.
